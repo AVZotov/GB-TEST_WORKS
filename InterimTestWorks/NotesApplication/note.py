@@ -3,7 +3,7 @@ import consoleIO
 import uuid
 
 
-def get_note() -> dict:
+def add_note() -> dict:
     note_title = consoleIO.get_user_string('Please enter note title: ')
     note_body = consoleIO.get_user_string('Please enter note body: ')
     note_id = str(uuid.uuid1())[0:4]

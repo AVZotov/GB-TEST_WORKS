@@ -21,4 +21,7 @@ def load() -> list[Any]:
 
 
 def save(notes: list):
-    pass
+    data = {primary_key: notes}
+    with open(filename, 'w') as file:
+        json.dump(data, file, indent=4)
+    print('notes file updated')
