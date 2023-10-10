@@ -1,3 +1,4 @@
-import consoleIO
+import controller
 
-print(consoleIO.get_user_string('Enter note name'))
+
+controller.run()
